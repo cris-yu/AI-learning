@@ -1,0 +1,218 @@
+# AI 核心概念（扩展版）
+
+本笔记整理 AI 产品经理需要掌握的核心概念，覆盖 AI → ML → DL → 生成式 AI → 大模型的完整知识体系。
+
+---
+
+## 1. AI 知识体系框架
+
+AI 主要分层：
+
+- **AI（Artificial Intelligence）**
+  - 机器学习（Machine Learning）
+    - 深度学习（Deep Learning）
+      - 生成式 AI（GenAI）、大语言模型（LLM）
+
+---
+
+## 2. AI（人工智能）核心概念
+
+### 2.1 弱 AI vs 强 AI
+
+- **弱人工智能（Narrow AI）**：解决特定任务的智能（当前所有 AI）。
+- **强人工智能（AGI）**：具备跨领域学习和推理能力（仍在研究中）。
+
+### 2.2 Symbolic AI vs Statistical AI
+
+- **符号主义（Symbolic AI）**：依赖规则、知识图谱，可解释性强。
+- **统计/数据驱动 AI（Statistical AI）**：现代 ML/DL，从数据学习。
+
+### 2.3 主要 AI 应用领域
+
+- 机器学习（ML）
+- 自然语言处理（NLP）
+- 计算机视觉（CV）
+- 语音处理（Speech）
+- 推荐系统
+- 强化学习（RL）
+- 生成式 AI（Generative AI）
+- 知识图谱（KG）
+
+---
+
+## 3. Machine Learning 核心概念
+
+### 3.1 学习方式
+
+- **监督学习（Supervised）**
+- **无监督学习（Unsupervised）**
+- **半监督学习（Semi-supervised）**
+- **弱监督学习（Weak-supervised）**
+- **自监督学习（Self-supervised）** ← LLM 基础
+- **强化学习（Reinforcement Learning）**
+
+### 3.2 典型任务类型
+
+- 分类（Classification）
+- 回归（Regression）
+- 聚类（Clustering）
+- 排序/推荐（Ranking）
+- 时间序列预测
+- 异常检测
+
+### 3.3 模型生命周期
+
+1. 数据收集  
+2. 标注  
+3. 特征工程  
+4. 模型训练  
+5. 模型评估  
+6. 模型部署  
+7. 模型监控  
+8. 数据回流（闭环）
+
+---
+
+## 4. Deep Learning 核心概念
+
+### 4.1 神经网络基础
+
+关键组成：
+
+- 神经元（Neuron）
+- 层（Layers）
+- 权重（Weights）
+- 激活函数（Activation）
+- 损失函数（Loss）
+- 反向传播（Backpropagation）
+
+### 4.2 常见神经网络结构
+
+- **CNN**：图像任务
+- **RNN/LSTM**：早期序列建模
+- **Transformer**：现代 NLP/CV 多模态核心架构
+- **Diffusion Model**：图像生成
+
+### 4.3 训练术语
+
+- Batch Size  
+- Epoch  
+- Learning Rate  
+- Overfitting / Underfitting  
+- Regularization  
+- Dropout  
+- GPU / TPU  
+
+---
+
+## 5. 生成式 AI（Generative AI）核心概念
+
+### 5.1 大语言模型（LLM）
+
+代表模型：
+
+- GPT、Gemini、Claude、Llama、GLM 等
+
+技术原理（概要）：
+
+- Transformer 架构  
+- 训练目标：预测下一 token  
+- 大规模自监督训练  
+- SFT、RLHF、RLAIF 用于对齐  
+
+### 5.2 Prompt 工程（Prompt Engineering）
+
+- Zero-shot  
+- Few-shot  
+- Chain-of-thought（思维链）  
+- RAG（检索增强生成）  
+- Tool Use（工具调用）
+
+### 5.3 模型能力边界
+
+- 幻觉（Hallucination）  
+- 易受 prompt 影响  
+- 不保证事实正确性  
+- 需要大量算力  
+
+### 5.4 模型对齐（Alignment）
+
+- **SFT**（监督微调）  
+- **RLHF**（人类反馈强化学习）  
+- **RLAIF**（AI 反馈）  
+
+---
+
+## 6. AI 系统架构核心概念
+
+### 6.1 数据-模型-应用三层架构
+
+1. **Data Layer**：数据收集、清洗、标注  
+2. **Model Layer**：模型训练与推理  
+3. **Application Layer**：业务逻辑、UI、API
+
+### 6.2 训练 vs 推理
+
+- **训练（Training）**：离线、高成本  
+- **推理（Inference）**：实时、需低延迟  
+
+产品影响：
+
+- 成本（GPU）
+- 响应延迟（Latency）
+- 部署位置（Cloud/Edge）
+
+---
+
+## 7. AI 评估指标核心概念
+
+### 7.1 传统 ML 指标
+
+- Accuracy  
+- Precision / Recall  
+- F1 Score  
+- ROC-AUC  
+- MAE / RMSE  
+
+### 7.2 生成式 AI 指标
+
+- 相关性（Relevance）  
+- 一致性（Consistency）  
+- 可控性（Controlability）  
+- 安全性（Safety）  
+- 幻觉率（Hallucination Rate）
+
+---
+
+## 8. AI 安全、风险与伦理
+
+需重点关注：
+
+- 数据隐私  
+- 模型偏见（Bias）  
+- 风险与误用  
+- 可解释性（Interpretability）  
+- 内容安全  
+- 模型滥用（Safety Risks）
+
+---
+
+## 附录：推荐学习方向
+
+- AI 产品经理技能图谱  
+- ML 基础 + Transformer 原理  
+- Prompt Engineering  
+- RAG & Agent 系统  
+- 模型评估体系（LLM Evaluation）  
+- AI 产品 PRD 写法  
+
+---
+
+如果你需要，我可以继续：
+
+### ✅ 生成目录版（含 TOC）  
+### ✅ 转换成适合 GitHub README 的版本  
+### ✅ 自动推送到你的 GitHub 仓库  
+### ✅ 补充成 PPT / 思维导图  
+
+告诉我你希望下一步怎么处理！
