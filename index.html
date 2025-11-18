@@ -9,15 +9,15 @@
 <body>
     <div class="container">
         <header>
-            <h1>🚀 产品经理AI学习计划</h1>
-            <p class="subtitle">系统化掌握AI知识，助力产品创新</p>
+            <h1>🚀 AI产品经理求职加速计划</h1>
+            <p class="subtitle">4周密集学习 + 实战项目，快速转型AI产品经理</p>
             <div class="progress-summary">
                 <div class="stat">
                     <span class="stat-number" id="totalProgress">0%</span>
                     <span class="stat-label">总体进度</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number" id="completedLessons">0/36</span>
+                    <span class="stat-number" id="completedLessons">0/28</span>
                     <span class="stat-label">已完成课程</span>
                 </div>
                 <div class="stat">
@@ -34,12 +34,12 @@
         </div>
 
         <div class="timeline">
-            <!-- 第一阶段：AI基础认知 -->
+            <!-- 第一阶段：AI核心知识速成 -->
             <div class="phase" data-phase="1">
                 <div class="phase-header" onclick="togglePhase(1)">
                     <div class="phase-info">
-                        <h2>📚 第一阶段：AI基础认知（2周）</h2>
-                        <p>建立AI基础概念体系，理解核心技术原理</p>
+                        <h2>📚 第一阶段：AI核心知识速成（5天）</h2>
+                        <p>快速建立AI产品经理必备知识体系</p>
                     </div>
                     <div class="phase-progress">
                         <div class="progress-circle" data-progress="0">
@@ -50,23 +50,24 @@
                 
                 <div class="phase-content">
                     <div class="week-section">
-                        <h3>Week 1: AI核心概念</h3>
+                        <h3>Day 1-2: AI核心概念与大模型基础</h3>
                         <div class="lessons">
                             <div class="lesson-card" data-lesson="1-1">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>什么是人工智能？</h4>
-                                    <span class="time-badge">2小时</span>
+                                    <h4>AI产品经理必备技术知识</h4>
+                                    <span class="time-badge">4小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>AI的定义与发展历史</li>
-                                        <li>弱AI vs 强AI</li>
-                                        <li>AI的应用场景概览</li>
+                                        <li>AI、ML、DL核心概念速览</li>
+                                        <li>监督/无监督学习应用场景</li>
+                                        <li>模型训练、评估、部署流程</li>
+                                        <li>AI产品经理与工程师的协作语言</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank" class="resource-link">📖 Andrew Ng - AI For Everyone</a>
-                                        <a href="https://www.youtube.com/watch?v=ad79nYk2keg" target="_blank" class="resource-link">🎥 AI简史视频</a>
+                                        <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank" class="resource-link">📖 AI For Everyone（1.5倍速）</a>
+                                        <a href="https://developers.google.com/machine-learning/crash-course" target="_blank" class="resource-link">📖 Google ML速成课程</a>
                                     </div>
                                 </div>
                             </div>
@@ -74,37 +75,19 @@
                             <div class="lesson-card" data-lesson="1-2">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>机器学习基础</h4>
-                                    <span class="time-badge">3小时</span>
+                                    <h4>大语言模型深度理解</h4>
+                                    <span class="time-badge">4小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>监督学习、无监督学习、强化学习</li>
-                                        <li>训练数据与模型的关系</li>
-                                        <li>常见ML算法类型</li>
+                                        <li>GPT/Claude/Gemini等主流模型对比</li>
+                                        <li>Token、上下文窗口、温度参数</li>
+                                        <li>Prompt Engineering核心技巧</li>
+                                        <li>RAG、Fine-tuning使用场景</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://developers.google.com/machine-learning/crash-course" target="_blank" class="resource-link">📖 Google ML速成课程</a>
-                                        <a href="https://www.elementsofai.com/" target="_blank" class="resource-link">🎓 Elements of AI</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="1-3">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>深度学习入门</h4>
-                                    <span class="time-badge">3小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>神经网络基本原理</li>
-                                        <li>CNN、RNN、Transformer架构</li>
-                                        <li>深度学习的应用领域</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.3blue1brown.com/topics/neural-networks" target="_blank" class="resource-link">🎥 3Blue1Brown神经网络可视化</a>
-                                        <a href="https://playground.tensorflow.org/" target="_blank" class="resource-link">🔧 TensorFlow Playground</a>
+                                        <a href="https://www.promptingguide.ai/" target="_blank" class="resource-link">📖 Prompt Engineering指南</a>
+                                        <a href="https://platform.openai.com/docs" target="_blank" class="resource-link">📖 OpenAI官方文档</a>
                                     </div>
                                 </div>
                             </div>
@@ -112,23 +95,44 @@
                     </div>
 
                     <div class="week-section">
-                        <h3>Week 2: NLP与大语言模型</h3>
+                        <h3>Day 3-5: AI产品案例分析</h3>
                         <div class="lessons">
-                            <div class="lesson-card" data-lesson="1-4">
+                            <div class="lesson-card" data-lesson="1-3">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>自然语言处理基础</h4>
+                                    <h4>AI产品类型与商业模式</h4>
                                     <span class="time-badge">3小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>NLP的核心任务（分词、词性标注、命名实体识别）</li>
-                                        <li>词向量与语义理解</li>
-                                        <li>NLP应用场景</li>
+                                        <li>垂直领域AI产品（医疗、教育、金融、客服）</li>
+                                        <li>通用AI工具（ChatGPT、Midjourney、Notion AI）</li>
+                                        <li>API/SaaS/嵌入式AI商业模式</li>
+                                        <li>成功案例拆解（5个典型产品）</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" class="resource-link">📖 Stanford NLP教材</a>
-                                        <a href="https://huggingface.co/course" target="_blank" class="resource-link">🎓 HuggingFace NLP课程</a>
+                                        <a href="https://a16z.com/ai/" target="_blank" class="resource-link">📖 a16z AI报告</a>
+                                        <a href="https://www.nfx.com/post/ai-business-model-patterns" target="_blank" class="resource-link">📊 AI商业模式</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-card" data-lesson="1-4">
+                                <div class="lesson-header">
+                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
+                                    <h4>竞品分析实战练习</h4>
+                                    <span class="time-badge">4小时</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li>选择3个AI产品进行深度分析</li>
+                                        <li>功能拆解、技术架构推测</li>
+                                        <li>用户痛点与解决方案</li>
+                                        <li>撰写竞品分析报告（作品集素材）</li>
+                                    </ul>
+                                    <div class="resources">
+                                        <a href="https://www.producthunt.com/topics/artificial-intelligence" target="_blank" class="resource-link">🔍 Product Hunt AI产品</a>
+                                        <a href="https://theresanaiforthat.com/" target="_blank" class="resource-link">🤖 AI工具导航</a>
                                     </div>
                                 </div>
                             </div>
@@ -136,37 +140,20 @@
                             <div class="lesson-card" data-lesson="1-5">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>大语言模型（LLM）概述</h4>
+                                    <h4>AI工具深度使用</h4>
                                     <span class="time-badge">3小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>GPT、BERT、LLaMA等模型对比</li>
-                                        <li>预训练与微调机制</li>
-                                        <li>LLM的能力与局限</li>
+                                        <li>ChatGPT高级功能（GPTs、Code Interpreter）</li>
+                                        <li>Claude Projects实战应用</li>
+                                        <li>Midjourney专业作图技巧</li>
+                                        <li>构建个人AI工作流</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://arxiv.org/abs/2303.18223" target="_blank" class="resource-link">📄 GPT-4技术报告</a>
-                                        <a href="https://www.anthropic.com/index/100k-context-windows" target="_blank" class="resource-link">📖 Claude技术博客</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="1-6">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>Prompt Engineering基础</h4>
-                                    <span class="time-badge">2小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>提示词工程基本原则</li>
-                                        <li>Few-shot、Zero-shot学习</li>
-                                        <li>提示词优化技巧</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.promptingguide.ai/" target="_blank" class="resource-link">📖 Prompt Engineering指南</a>
-                                        <a href="https://learnprompting.org/" target="_blank" class="resource-link">🎓 Learn Prompting</a>
+                                        <a href="https://chat.openai.com/" target="_blank" class="resource-link">🔧 ChatGPT</a>
+                                        <a href="https://claude.ai/" target="_blank" class="resource-link">🔧 Claude</a>
+                                        <a href="https://www.midjourney.com/" target="_blank" class="resource-link">🎨 Midjourney</a>
                                     </div>
                                 </div>
                             </div>
@@ -175,12 +162,12 @@
                 </div>
             </div>
 
-            <!-- 第二阶段：AI产品实践 -->
+            <!-- 第二阶段：实战项目周 -->
             <div class="phase" data-phase="2">
                 <div class="phase-header" onclick="togglePhase(2)">
                     <div class="phase-info">
-                        <h2>🎯 第二阶段：AI产品实践（3周）</h2>
-                        <p>掌握AI产品设计方法论和工具使用</p>
+                        <h2>🎯 第二阶段：实战项目周（7天）</h2>
+                        <p>动手实践3个真实AI产品项目，构建作品集</p>
                     </div>
                     <div class="phase-progress">
                         <div class="progress-circle" data-progress="0">
@@ -191,23 +178,24 @@
                 
                 <div class="phase-content">
                     <div class="week-section">
-                        <h3>Week 3: AI产品设计框架</h3>
+                        <h3>实战项目1：智能客服助手（2天）</h3>
                         <div class="lessons">
                             <div class="lesson-card" data-lesson="2-1">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI产品类型分析</h4>
-                                    <span class="time-badge">2小时</span>
+                                    <h4>项目规划与PRD撰写</h4>
+                                    <span class="time-badge">3小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>AI Native产品 vs AI增强产品</li>
-                                        <li>B2B与B2C AI产品差异</li>
-                                        <li>典型AI产品案例分析</li>
+                                        <li>需求分析：某电商平台客服场景</li>
+                                        <li>功能设计：FAQ自动回复、订单查询、情绪识别</li>
+                                        <li>撰写AI产品PRD（包含数据需求、模型指标）</li>
+                                        <li>技术方案设计：选择合适的LLM + RAG架构</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://a16z.com/ai/" target="_blank" class="resource-link">📖 a16z AI产品报告</a>
-                                        <a href="https://www.lennysnewsletter.com/p/ai-products" target="_blank" class="resource-link">📰 Lenny's Newsletter - AI产品</a>
+                                        <a href="https://platform.openai.com/docs/assistants" target="_blank" class="resource-link">📖 OpenAI Assistants API</a>
+                                        <a href="https://www.svpg.com/" target="_blank" class="resource-link">📝 PRD模板参考</a>
                                     </div>
                                 </div>
                             </div>
@@ -215,37 +203,19 @@
                             <div class="lesson-card" data-lesson="2-2">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI产品需求分析</h4>
-                                    <span class="time-badge">3小时</span>
+                                    <h4>原型开发与测试</h4>
+                                    <span class="time-badge">5小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>识别适合AI的业务场景</li>
-                                        <li>数据可行性评估</li>
-                                        <li>技术可行性与成本评估</li>
+                                        <li>使用Voiceflow/Botpress搭建对话流程</li>
+                                        <li>接入OpenAI API实现智能回复</li>
+                                        <li>设计10个测试场景并进行评估</li>
+                                        <li>输出：可演示的原型 + 测试报告</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://hbr.org/2018/04/a-survey-of-3000-executives-reveals-how-businesses-succeed-with-ai" target="_blank" class="resource-link">📊 HBR AI项目成功因素</a>
-                                        <a href="https://www.productplan.com/learn/ai-product-management/" target="_blank" class="resource-link">🎓 AI产品管理指南</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="2-3">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>数据策略与标注</h4>
-                                    <span class="time-badge">3小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>数据收集策略</li>
-                                        <li>数据标注方法与质量控制</li>
-                                        <li>数据隐私与合规</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://labelstud.io/" target="_blank" class="resource-link">🔧 Label Studio工具</a>
-                                        <a href="https://www.oreilly.com/library/view/building-machine-learning/9781492053187/" target="_blank" class="resource-link">📖 Building ML Powered Applications</a>
+                                        <a href="https://www.voiceflow.com/" target="_blank" class="resource-link">🔧 Voiceflow</a>
+                                        <a href="https://botpress.com/" target="_blank" class="resource-link">🔧 Botpress</a>
                                     </div>
                                 </div>
                             </div>
@@ -253,44 +223,69 @@
                     </div>
 
                     <div class="week-section">
-                        <h3>Week 4: AI工具实战</h3>
+                        <h3>实战项目2：AI内容生成工具（2天）</h3>
                         <div class="lessons">
-                            <div class="lesson-card" data-lesson="2-4">
+                            <div class="lesson-card" data-lesson="2-3">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>ChatGPT/Claude高级应用</h4>
-                                    <span class="time-badge">3小时</span>
+                                    <h4>产品设计与原型搭建</h4>
+                                    <span class="time-badge">4小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>产品需求文档生成</li>
-                                        <li>用户研究辅助</li>
-                                        <li>竞品分析自动化</li>
+                                        <li>选题：小红书文案生成器/产品描述优化器</li>
+                                        <li>用户研究：分析5个竞品的优劣</li>
+                                        <li>核心功能：模板库、风格切换、一键优化</li>
+                                        <li>设计产品原型（Figma/即时设计）</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://chat.openai.com/" target="_blank" class="resource-link">🔧 ChatGPT</a>
-                                        <a href="https://claude.ai/" target="_blank" class="resource-link">🔧 Claude</a>
-                                        <a href="https://github.com/f/awesome-chatgpt-prompts" target="_blank" class="resource-link">📝 ChatGPT Prompts集合</a>
+                                        <a href="https://www.figma.com/" target="_blank" class="resource-link">🎨 Figma</a>
+                                        <a href="https://js.design/" target="_blank" class="resource-link">🎨 即时设计</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="lesson-card" data-lesson="2-5">
+                            <div class="lesson-card" data-lesson="2-4">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>Midjourney/DALL-E图像生成</h4>
-                                    <span class="time-badge">2小时</span>
+                                    <h4>MVP开发与优化</h4>
+                                    <span class="time-badge">4小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>产品原型可视化</li>
-                                        <li>营销素材生成</li>
-                                        <li>提示词优化技巧</li>
+                                        <li>使用Streamlit/Gradio快速搭建Web界面</li>
+                                        <li>调优Prompt实现不同文案风格</li>
+                                        <li>邀请5位用户测试并收集反馈</li>
+                                        <li>输出：在线Demo + 用户反馈报告</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://www.midjourney.com/" target="_blank" class="resource-link">🔧 Midjourney</a>
-                                        <a href="https://openai.com/dall-e-3" target="_blank" class="resource-link">🔧 DALL-E 3</a>
-                                        <a href="https://prompthero.com/" target="_blank" class="resource-link">💡 PromptHero</a>
+                                        <a href="https://streamlit.io/" target="_blank" class="resource-link">🔧 Streamlit</a>
+                                        <a href="https://www.gradio.app/" target="_blank" class="resource-link">🔧 Gradio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-section">
+                        <h3>实战项目3：AI数据分析助手（3天）</h3>
+                        <div class="lessons">
+                            <div class="lesson-card" data-lesson="2-5">
+                                <div class="lesson-header">
+                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
+                                    <h4>需求分析与技术选型</h4>
+                                    <span class="time-badge">3小时</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li>场景定义：帮助运营分析用户数据</li>
+                                        <li>核心功能：自然语言查询、可视化图表、洞察生成</li>
+                                        <li>技术方案：GPT-4 Code Interpreter / Claude + Pandas</li>
+                                        <li>数据准备：使用公开数据集（Kaggle）</li>
+                                    </ul>
+                                    <div class="resources">
+                                        <a href="https://www.kaggle.com/datasets" target="_blank" class="resource-link">🗂️ Kaggle数据集</a>
+                                        <a href="https://github.com/openai/openai-cookbook" target="_blank" class="resource-link">📚 OpenAI Cookbook</a>
                                     </div>
                                 </div>
                             </div>
@@ -298,81 +293,39 @@
                             <div class="lesson-card" data-lesson="2-6">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>No-Code AI平台</h4>
-                                    <span class="time-badge">3小时</span>
+                                    <h4>原型开发与功能实现</h4>
+                                    <span class="time-badge">6小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>Google AutoML、Azure ML Studio</li>
-                                        <li>快速构建AI原型</li>
-                                        <li>模型评估与迭代</li>
+                                        <li>搭建交互界面（Streamlit + Plotly）</li>
+                                        <li>实现自然语言转SQL/Pandas查询</li>
+                                        <li>自动生成数据洞察报告</li>
+                                        <li>边缘案例处理与错误提示优化</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://cloud.google.com/automl" target="_blank" class="resource-link">🔧 Google AutoML</a>
-                                        <a href="https://azure.microsoft.com/en-us/products/machine-learning" target="_blank" class="resource-link">🔧 Azure ML</a>
-                                        <a href="https://teachablemachine.withgoogle.com/" target="_blank" class="resource-link">🎓 Teachable Machine</a>
+                                        <a href="https://plotly.com/python/" target="_blank" class="resource-link">📊 Plotly</a>
+                                        <a href="https://docs.streamlit.io/" target="_blank" class="resource-link">📖 Streamlit文档</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="week-section">
-                        <h3>Week 5: API集成与开发协作</h3>
-                        <div class="lessons">
                             <div class="lesson-card" data-lesson="2-7">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>OpenAI API使用</h4>
+                                    <h4>项目总结与展示准备</h4>
                                     <span class="time-badge">3小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>API基础概念与调用</li>
-                                        <li>参数调优（temperature、max_tokens等）</li>
-                                        <li>成本估算与优化</li>
+                                        <li>录制产品演示视频（3-5分钟）</li>
+                                        <li>撰写项目案例说明（背景、方案、成果）</li>
+                                        <li>部署到Streamlit Cloud供在线访问</li>
+                                        <li>准备面试讲解思路</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://platform.openai.com/docs/introduction" target="_blank" class="resource-link">📖 OpenAI API文档</a>
-                                        <a href="https://github.com/openai/openai-cookbook" target="_blank" class="resource-link">📚 OpenAI Cookbook</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="2-8">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>与AI工程师协作</h4>
-                                    <span class="time-badge">2小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>技术文档阅读（模型评估指标）</li>
-                                        <li>有效沟通需求与限制</li>
-                                        <li>AI项目敏捷开发</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://ml-ops.org/" target="_blank" class="resource-link">📖 MLOps指南</a>
-                                        <a href="https://www.oreilly.com/radar/podcast/product-management-for-ai/" target="_blank" class="resource-link">🎙️ AI产品管理播客</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="2-9">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI产品PRD撰写</h4>
-                                    <span class="time-badge">3小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>AI功能需求描述规范</li>
-                                        <li>数据需求与标注规范</li>
-                                        <li>性能指标定义（准确率、召回率等）</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.svpg.com/assets/Files/inspired.pdf" target="_blank" class="resource-link">📖 INSPIRED - PRD最佳实践</a>
-                                        <a href="https://www.productplan.com/glossary/product-requirements-document/" target="_blank" class="resource-link">📝 PRD模板</a>
+                                        <a href="https://streamlit.io/cloud" target="_blank" class="resource-link">☁️ Streamlit Cloud</a>
+                                        <a href="https://www.loom.com/" target="_blank" class="resource-link">🎥 Loom录屏</a>
                                     </div>
                                 </div>
                             </div>
@@ -381,12 +334,12 @@
                 </div>
             </div>
 
-            <!-- 第三阶段：AI产品战略 -->
+            <!-- 第三阶段:面试准备与求职 -->
             <div class="phase" data-phase="3">
                 <div class="phase-header" onclick="togglePhase(3)">
                     <div class="phase-info">
-                        <h2>💡 第三阶段：AI产品战略（2周）</h2>
-                        <p>构建AI产品思维和战略规划能力</p>
+                        <h2>💼 第三阶段:面试准备与求职(7天)</h2>
+                        <p>打造完整作品集,掌握面试技巧,准备求职材料</p>
                     </div>
                     <div class="phase-progress">
                         <div class="progress-circle" data-progress="0">
@@ -397,23 +350,24 @@
                 
                 <div class="phase-content">
                     <div class="week-section">
-                        <h3>Week 6: 用户体验与伦理</h3>
+                        <h3>Day 1-3: 作品集打磨</h3>
                         <div class="lessons">
                             <div class="lesson-card" data-lesson="3-1">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI产品用户体验设计</h4>
-                                    <span class="time-badge">3小时</span>
+                                    <h4>AI产品作品集网站搭建</h4>
+                                    <span class="time-badge">4小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>人机交互模式（对话式、推荐式等）</li>
-                                        <li>AI不确定性的UI处理</li>
-                                        <li>个性化体验设计</li>
+                                        <li>使用Notion/个人网站展示3个实战项目</li>
+                                        <li>项目结构:背景-方案-成果-反思</li>
+                                        <li>配图:原型截图、流程图、数据图表</li>
+                                        <li>添加项目演示视频链接</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://pair.withgoogle.com/" target="_blank" class="resource-link">📖 Google People+AI Research</a>
-                                        <a href="https://www.nngroup.com/articles/ai-ux/" target="_blank" class="resource-link">📰 Nielsen Norman Group - AI UX</a>
+                                        <a href="https://www.notion.so/" target="_blank" class="resource-link">📝 Notion</a>
+                                        <a href="https://github.com/" target="_blank" class="resource-link">💻 GitHub Pages</a>
                                     </div>
                                 </div>
                             </div>
@@ -421,18 +375,19 @@
                             <div class="lesson-card" data-lesson="3-2">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI偏见与公平性</h4>
-                                    <span class="time-badge">2小时</span>
+                                    <h4>简历优化与求职信撰写</h4>
+                                    <span class="time-badge">4小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>算法偏见来源与检测</li>
-                                        <li>公平性评估指标</li>
-                                        <li>缓解偏见的策略</li>
+                                        <li>AI产品经理简历关键词优化</li>
+                                        <li>STAR法则描述项目经验</li>
+                                        <li>量化成果展示(用户量、满意度等)</li>
+                                        <li>撰写3封针对性求职信</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://www.fatml.org/" target="_blank" class="resource-link">📖 Fairness, Accountability, and Transparency in ML</a>
-                                        <a href="https://ethics.fast.ai/" target="_blank" class="resource-link">🎓 Practical Data Ethics</a>
+                                        <a href="https://www.linkedin.com/" target="_blank" class="resource-link">🔗 LinkedIn</a>
+                                        <a href="https://resume.io/" target="_blank" class="resource-link">📄 Resume.io</a>
                                     </div>
                                 </div>
                             </div>
@@ -440,37 +395,19 @@
                             <div class="lesson-card" data-lesson="3-3">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI伦理与合规</h4>
-                                    <span class="time-badge">2小时</span>
+                                    <h4>LinkedIn与社交媒体优化</h4>
+                                    <span class="time-badge">3小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>GDPR、CCPA等数据法规</li>
-                                        <li>AI伦理框架</li>
-                                        <li>可解释性与透明度</li>
+                                        <li>LinkedIn个人资料完善(Headline突出AI)</li>
+                                        <li>发布3篇AI产品相关文章/洞察</li>
+                                        <li>加入AI产品经理社群并活跃互动</li>
+                                        <li>关注目标公司并与内推人建联</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence" target="_blank" class="resource-link">📄 EU AI Act</a>
-                                        <a href="https://ai.google/principles/" target="_blank" class="resource-link">📖 Google AI Principles</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="3-4">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI产品安全与隐私</h4>
-                                    <span class="time-badge">2小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>对抗样本与模型鲁棒性</li>
-                                        <li>隐私保护技术（联邦学习、差分隐私）</li>
-                                        <li>AI系统安全测试</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://owasp.org/www-project-machine-learning-security-top-10/" target="_blank" class="resource-link">📖 OWASP ML安全Top 10</a>
-                                        <a href="https://www.microsoft.com/en-us/security/business/ai-machine-learning" target="_blank" class="resource-link">🔒 Microsoft AI安全</a>
+                                        <a href="https://www.linkedin.com/" target="_blank" class="resource-link">💼 LinkedIn</a>
+                                        <a href="https://medium.com/" target="_blank" class="resource-link">✍️ Medium</a>
                                     </div>
                                 </div>
                             </div>
@@ -478,23 +415,44 @@
                     </div>
 
                     <div class="week-section">
-                        <h3>Week 7: 商业化与度量</h3>
+                        <h3>Day 4-5: 面试准备</h3>
                         <div class="lessons">
-                            <div class="lesson-card" data-lesson="3-5">
+                            <div class="lesson-card" data-lesson="3-4">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI产品商业模式</h4>
-                                    <span class="time-badge">3小时</span>
+                                    <h4>AI产品经理面试题库</h4>
+                                    <span class="time-badge">5小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>SaaS、API、嵌入式AI模式</li>
-                                        <li>定价策略（基于使用、订阅制等）</li>
-                                        <li>AI产品的护城河</li>
+                                        <li>技术题:解释LLM工作原理、RAG vs Fine-tuning</li>
+                                        <li>产品题:如何评估AI功能的ROI</li>
+                                        <li>案例题:设计一个AI驱动的XX产品</li>
+                                        <li>准备30个高频问题的回答</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://www.nfx.com/post/ai-business-model-patterns" target="_blank" class="resource-link">📊 NFX AI商业模式</a>
-                                        <a href="https://www.sequoiacap.com/article/ai-powered-products/" target="_blank" class="resource-link">💰 Sequoia AI商业化</a>
+                                        <a href="https://www.glassdoor.com/" target="_blank" class="resource-link">🔍 Glassdoor</a>
+                                        <a href="https://www.tryexponent.com/" target="_blank" class="resource-link">🎯 Exponent</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-card" data-lesson="3-5">
+                                <div class="lesson-header">
+                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
+                                    <h4>行为面试与产品设计练习</h4>
+                                    <span class="time-badge">4小时</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li>准备5个STAR故事(成功/失败/冲突解决)</li>
+                                        <li>产品设计题:给X产品加AI功能</li>
+                                        <li>Mock Interview练习(找朋友/平台)</li>
+                                        <li>录制自我介绍视频并优化</li>
+                                    </ul>
+                                    <div class="resources">
+                                        <a href="https://www.pramp.com/" target="_blank" class="resource-link">🎤 Pramp</a>
+                                        <a href="https://interviewing.io/" target="_blank" class="resource-link">💬 Interviewing.io</a>
                                     </div>
                                 </div>
                             </div>
@@ -502,37 +460,84 @@
                             <div class="lesson-card" data-lesson="3-6">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI产品指标体系</h4>
+                                    <h4>AI产品案例分析深度准备</h4>
                                     <span class="time-badge">3小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>技术指标（准确率、延迟、吞吐量）</li>
-                                        <li>业务指标（用户满意度、ROI）</li>
-                                        <li>A/B测试与实验设计</li>
+                                        <li>准备10个AI产品的深度分析</li>
+                                        <li>分析角度:用户价值、技术方案、商业模式</li>
+                                        <li>准备改进建议与创新点</li>
+                                        <li>了解面试公司的AI产品线</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://www.oreilly.com/library/view/lean-analytics/9781449335687/" target="_blank" class="resource-link">📖 Lean Analytics</a>
-                                        <a href="https://exp-platform.com/" target="_blank" class="resource-link">🧪 Experimentation Platform</a>
+                                        <a href="https://www.producthunt.com/" target="_blank" class="resource-link">🚀 Product Hunt</a>
+                                        <a href="https://www.crunchbase.com/" target="_blank" class="resource-link">📊 Crunchbase</a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
+                    <div class="week-section">
+                        <h3>Day 6-7: 求职冲刺</h3>
+                        <div class="lessons">
                             <div class="lesson-card" data-lesson="3-7">
                                 <div class="lesson-header">
                                     <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI产品路线图规划</h4>
+                                    <h4>目标公司研究与投递</h4>
+                                    <span class="time-badge">4小时</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li>锁定20家目标公司(大厂+AI创业公司)</li>
+                                        <li>研究公司AI战略与产品线</li>
+                                        <li>寻找内推机会(LinkedIn/朋友圈)</li>
+                                        <li>定制化简历并投递</li>
+                                    </ul>
+                                    <div class="resources">
+                                        <a href="https://www.linkedin.com/jobs/" target="_blank" class="resource-link">💼 LinkedIn Jobs</a>
+                                        <a href="https://www.levels.fyi/" target="_blank" class="resource-link">💰 Levels.fyi</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-card" data-lesson="3-8">
+                                <div class="lesson-header">
+                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
+                                    <h4>AI行业人脉拓展</h4>
+                                    <span class="time-badge">3小时</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li>参加AI产品线下Meetup/活动</li>
+                                        <li>与5位AI产品经理进行Coffee Chat</li>
+                                        <li>加入AI产品社群并分享见解</li>
+                                        <li>在社交媒体展示学习成果</li>
+                                    </ul>
+                                    <div class="resources">
+                                        <a href="https://www.meetup.com/" target="_blank" class="resource-link">👥 Meetup</a>
+                                        <a href="https://lu.ma/" target="_blank" class="resource-link">📅 Luma</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lesson-card" data-lesson="3-9">
+                                <div class="lesson-header">
+                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
+                                    <h4>持续学习计划制定</h4>
                                     <span class="time-badge">2小时</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li>MVP策略与快速验证</li>
-                                        <li>模型迭代与产品迭代</li>
-                                        <li>技术债务管理</li>
+                                        <li>订阅AI产品相关Newsletter</li>
+                                        <li>制定每周学习新AI工具计划</li>
+                                        <li>建立个人AI产品知识库</li>
+                                        <li>设定3个月后的进阶目标</li>
                                     </ul>
                                     <div class="resources">
-                                        <a href="https://www.productplan.com/learn/product-roadmap/" target="_blank" class="resource-link">📅 产品路线图指南</a>
-                                        <a href="https://www.reforge.com/artifacts" target="_blank" class="resource-link">🎓 Reforge产品策略</a>
+                                        <a href="https://www.tldv.io/blog/ai-newsletters" target="_blank" class="resource-link">📧 AI Newsletters</a>
+                                        <a href="https://obsidian.md/" target="_blank" class="resource-link">📚 Obsidian</a>
                                     </div>
                                 </div>
                             </div>
@@ -541,204 +546,6 @@
                 </div>
             </div>
 
-            <!-- 第四阶段：前沿趋势与实战项目 -->
-            <div class="phase" data-phase="4">
-                <div class="phase-header" onclick="togglePhase(4)">
-                    <div class="phase-info">
-                        <h2>🔥 第四阶段：前沿趋势与实战项目（3周）</h2>
-                        <p>掌握最新技术趋势，完成实战项目</p>
-                    </div>
-                    <div class="phase-progress">
-                        <div class="progress-circle" data-progress="0">
-                            <span class="progress-text">0%</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="phase-content">
-                    <div class="week-section">
-                        <h3>Week 8-9: AI前沿技术</h3>
-                        <div class="lessons">
-                            <div class="lesson-card" data-lesson="4-1">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>多模态AI</h4>
-                                    <span class="time-badge">3小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>GPT-4V、Gemini等多模态模型</li>
-                                        <li>视觉-语言融合应用</li>
-                                        <li>产品应用场景探索</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://openai.com/research/gpt-4v-system-card" target="_blank" class="resource-link">📄 GPT-4V技术文档</a>
-                                        <a href="https://deepmind.google/technologies/gemini/" target="_blank" class="resource-link">🔍 Google Gemini</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="4-2">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI Agent与自主系统</h4>
-                                    <span class="time-badge">3小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>AutoGPT、LangChain等框架</li>
-                                        <li>Agent架构设计</li>
-                                        <li>工具调用与链式推理</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.langchain.com/" target="_blank" class="resource-link">🔧 LangChain</a>
-                                        <a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" class="resource-link">🤖 AutoGPT</a>
-                                        <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank" class="resource-link">📖 LLM Agent综述</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="4-3">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>RAG（检索增强生成）</h4>
-                                    <span class="time-badge">3小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>向量数据库（Pinecone、Weaviate）</li>
-                                        <li>知识库构建与检索</li>
-                                        <li>企业AI应用场景</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.pinecone.io/learn/retrieval-augmented-generation/" target="_blank" class="resource-link">📖 RAG原理详解</a>
-                                        <a href="https://weaviate.io/" target="_blank" class="resource-link">🔧 Weaviate向量数据库</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="4-4">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>模型微调与定制化</h4>
-                                    <span class="time-badge">3小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>Fine-tuning vs Prompt Engineering</li>
-                                        <li>PEFT、LoRA等高效微调方法</li>
-                                        <li>领域适配策略</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://platform.openai.com/docs/guides/fine-tuning" target="_blank" class="resource-link">📖 OpenAI Fine-tuning指南</a>
-                                        <a href="https://huggingface.co/blog/peft" target="_blank" class="resource-link">🔧 PEFT库</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="4-5">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI行业应用深度分析</h4>
-                                    <span class="time-badge">4小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>医疗、金融、教育、电商等垂直领域</li>
-                                        <li>行业痛点与AI解决方案</li>
-                                        <li>成功案例拆解</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights" target="_blank" class="resource-link">📊 McKinsey AI行业报告</a>
-                                        <a href="https://hai.stanford.edu/ai-index-2024" target="_blank" class="resource-link">📈 Stanford AI Index</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="4-6">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>AI趋势预测与战略思考</h4>
-                                    <span class="time-badge">2小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>AGI发展路径</li>
-                                        <li>开源 vs 闭源模型生态</li>
-                                        <li>AI对产品岗位的影响</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://situational-awareness.ai/" target="_blank" class="resource-link">📖 Situational Awareness</a>
-                                        <a href="https://www.oneusefulthing.org/" target="_blank" class="resource-link">📰 One Useful Thing博客</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="week-section">
-                        <h3>Week 10: 实战项目</h3>
-                        <div class="lessons">
-                            <div class="lesson-card" data-lesson="4-7">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>项目选题与规划</h4>
-                                    <span class="time-badge">4小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>选择一个真实业务场景</li>
-                                        <li>撰写项目PRD</li>
-                                        <li>数据与技术方案设计</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.kaggle.com/datasets" target="_blank" class="resource-link">🗂️ Kaggle数据集</a>
-                                        <a href="https://github.com/eugeneyan/applied-ml" target="_blank" class="resource-link">📚 Applied ML案例库</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="4-8">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>原型开发与测试</h4>
-                                    <span class="time-badge">8小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>使用No-Code工具或API构建原型</li>
-                                        <li>用户测试与反馈收集</li>
-                                        <li>迭代优化</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.streamlit.io/" target="_blank" class="resource-link">🔧 Streamlit快速原型</a>
-                                        <a href="https://www.gradio.app/" target="_blank" class="resource-link">🔧 Gradio界面生成</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="lesson-card" data-lesson="4-9">
-                                <div class="lesson-header">
-                                    <input type="checkbox" class="lesson-checkbox" onchange="updateProgress()">
-                                    <h4>项目总结与展示</h4>
-                                    <span class="time-badge">4小时</span>
-                                </div>
-                                <div class="lesson-content">
-                                    <ul>
-                                        <li>撰写项目复盘报告</li>
-                                        <li>准备产品演示</li>
-                                        <li>提炼产品思维与方法论</li>
-                                    </ul>
-                                    <div class="resources">
-                                        <a href="https://www.canva.com/" target="_blank" class="resource-link">🎨 Canva演示设计</a>
-                                        <a href="https://pitch.com/" target="_blank" class="resource-link">📊 Pitch演示工具</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <div class="resources-section">
